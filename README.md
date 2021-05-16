@@ -18,11 +18,15 @@ The aim of this analysis is to determine the impact of each donation from Alphab
 
 Tools and software: Python 3.7.9, Jupyter Notebook 6.1.4, Visual Studio Code 1.54.3. Tensorflow, sklearn, OneHotEncoder, and Pandas libraries. 
 
-Data set: []()
+Data set: [charity_data.csv](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/Resources/charity_data.csv)
 
-Base model code: []()
+Base model code: [AlphabetSoupCharity.ipynb](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity.ipynb)
+Results: [trained_application.h5](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/trained_application.h5)
 
-Attempted optimized model code: []()
+Attempted optimized model code: [AlphabetSoupCharity_Optimization.ipynb](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_Optimization.ipynb)
+Results: [optimized_application.h5](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/optimized_application.h5)
+
+
 
 ## Summary of Results
 
@@ -36,13 +40,13 @@ Attempted optimized model code: []()
 
 The neural network was made using two hidden layers containing 80 and 30 neurons respectively. The input layer consists of 44 features and the first hidden layer has roughly twice that number of neurons. The number of hidden neurons is decreased in subsequent layers to get closer to pattern/feature extraction and identify the target class. The ReLU activation function is used for the hidden layers to help characterize non-linear relationships in the data. As we are looking for a binary outcome (successful or not), the output layer has a single neuron and uses the sigmoid activation function to transform to a range between 0 and 1 and classify the data. 
 
-![]()
+![](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/Images/model_summary.PNG)
 
 Figure. 1 - Model Summary
 
 The accuracy of the model was ~72-73% which is a little under the minimum target accuracy of 75%. As a result the model performance is unsatifactory for predicting funding success.
 
-![]()
+![](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/Images/model_evaluation.png)
 
 Figure. 2 - Model Evaluation Results
 
@@ -55,13 +59,13 @@ In order to try and increase model performance the following steps were taken in
 * Different activation function was used for the second and third hidden layers
 * Doubled the number of epochs to the training regimen
 
-![]()
+![](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/Images/optimized_summary.png)
 
 Figure. 4 - "Optimized" Model Summary
 
 However, none of these particular tested modifications steps were able to increase model performance which remained within a few percentage points of the original base model. 
 
-![]()
+![](https://github.com/jkenning/Neural_Network_Charity_Analysis/blob/main/Images/optimized_evaluation.png)
 
 Figure. 3 - "Optimized" Model Evaluation Results
 
