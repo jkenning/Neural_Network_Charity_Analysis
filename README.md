@@ -1,6 +1,6 @@
 # Neural Network Charity Analysis
 
-Unsupervised machine learning of Cryptocurrency data
+Analysis of data from over 34,000 organizations to determine funding success
 
 ## Overview
 
